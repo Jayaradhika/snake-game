@@ -1,0 +1,19 @@
+# Compiled binary
+snake
+snake.exe
+
+# Object files
+*.o
+*.obj
+
+# Build dirs
+build/
+out/
+
+# IDE / Editor
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db

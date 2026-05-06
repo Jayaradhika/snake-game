@@ -1,0 +1,19 @@
+# Makefile – Snake Game
+
+CXX      = g++
+CXXFLAGS = -std=c++17 -Wall -Wextra
+TARGET   = snake
+SRC      = snake.cpp
+
+all: $(TARGET)
+
+$(TARGET): $(SRC)
+	$(CXX) $(CXXFLAGS) -o $(TARGET) $(SRC)
+
+run: $(TARGET)
+	./$(TARGET)
+
+clean:
+	rm -f $(TARGET) snake.exe
+
+.PHONY: all run clean
